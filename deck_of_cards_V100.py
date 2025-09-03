@@ -1,30 +1,13 @@
 import random
-print('welcome to the digetal python deck of CARDS V1.02')
-print('contolls: enter[key] = draw')
-d=2
-for d in range(9999):
-    a=input()
-    if a=='':
-        b= random.randint(1, 13)
-        c= random.randint(1, 4)
-        b=int(b)
-        c=int(c)
-        if b==13:
-            b='king'
-        elif b==12:
-            b='queen'
-        elif b==11:
-            b='jack'
-        elif b==1:
-            b='ace'
-        if c==1:
-            c='diamonds'
-        elif c==2:
-            c='clubs'
-        elif c==3:
-            c='spades'
-        elif c==4:
-            c='hearts'
-    
-    
+
+print('welcome to the digital python deck of CARDS V1.02')
+print('controls: enter[key] = draw')
+
+names = {1: 'ace', 11: 'jack', 12: 'queen', 13: 'king'}
+suits = {1: 'diamonds', 2: 'clubs', 3: 'spades', 4: 'hearts'}
+
+for _ in range(9999):
+    if input() == '':
+        b = names.get(random.randint(1, 13), str(random.randint(2, 10)))
+        c = suits[random.randint(1, 4)]
         print(f'you drew the {b} of {c}')
