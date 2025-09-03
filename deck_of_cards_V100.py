@@ -1,5 +1,5 @@
 import random
-print('welcome to the digetal python deck of CARDS V1.00 open alpha')
+print('welcome to the digetal python deck of CARDS V1.01')
 print('contolls: enter[key] = draw')
 d=2
 for d in range(9999):
