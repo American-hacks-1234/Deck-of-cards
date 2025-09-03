@@ -1,5 +1,5 @@
 import random
-print('welcome to the digetal python deck of CARDS V1.01')
+print('welcome to the digetal python deck of CARDS V1.02')
 print('contolls: enter[key] = draw')
 d=2
 for d in range(9999):
@@ -15,7 +15,7 @@ for d in range(9999):
             b='queen'
         elif b==11:
             b='jack'
-        elif b==0:
+        elif b==1:
             b='ace'
         if c==1:
             c='diamonds'
