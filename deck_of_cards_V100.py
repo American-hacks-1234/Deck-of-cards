@@ -5,7 +5,7 @@ d=2
 for d in range(9999):
     a=input()
     if a=='':
-        b= random.randint(0, 13)
+        b= random.randint(1, 13)
         c= random.randint(1, 4)
         b=int(b)
         c=int(c)
